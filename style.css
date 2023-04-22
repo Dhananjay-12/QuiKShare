@@ -1,0 +1,104 @@
+/* <!-- introduction --> */
+.introduction-section {
+    height: 100vh;
+    font-family: "poppins";
+  }
+  .container {
+    background-image: url("img/hero-section-background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: grid;
+  }
+  
+  .box1 {
+    padding-top: 1rem;
+    width: 420px;
+    height: 410px;
+    background-color: rgba(255, 255, 255, 0.67);
+    grid-column-start: 2;
+    grid-row-start: 2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box2 {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    background-image: url(img/hero-section-img.jpg);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 45%;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    animation: rotation 60s infinite linear;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg) scale(0.9);
+    }
+    50% {
+      transform: rotate(180deg) scale(1);
+    }
+    100% {
+      transform: rotate(360deg) scale(0.9);
+    }
+  }
+  
+  .title {
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .inner-part {
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .get-started {
+    margin: 20px;
+    width: 150px;
+    height: 70px;
+    font-family: "poppins";
+    border-radius: 18px;
+    background-color: rgb(27, 7, 61);
+    color: #ffffff;
+    font-size: larger;
+    transition: all 0.3s ease-in;
+  }
+  
+  .learn-more {
+    width: 150px;
+    font-family: "poppins";
+    border-style: none;
+    border: 1px solid #000;
+    height: 70px;
+    border-radius: 18px;
+    font-size: larger;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease-in;
+  }
+  
+  .learn-more:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .get-started:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: rgb(27, 7, 61);
+  }
+
+  /* <!-- introduction --> */
